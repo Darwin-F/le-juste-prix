@@ -22,6 +22,7 @@ function verifier (nombre) {
     else {
         instruction.textContent = "#" + coups + "(" + nombre +  ") Félicitations vous avez trouver le juste prix !";
         instruction.className = "instruction fini";
+        input.disabled = true;
     }
     document.getElementById('instructions').prepend(instruction);
 }
